@@ -11,11 +11,11 @@
 <!--Section: Content-->
 <section class="px-md-7 mx-md-7 text-center text-lg-left dark-grey-text">
    <p class="text-center">If you already have an account, sign in <a href="{% url 'login' %}">here </a></p>
-   <div class="container justify-content-center">
-        <div class="col col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-5 mb-5 p-4 filter">
+   <div class="container ">
+        <div class="justify-content-center col col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-5 mb-5 p-4 filter">
             <div class="row">
-                <div class="col-12">
-         <form class="text-center" method="POST">
+                <div class="text-center col-12">
+         <form class="justify-content-center" method="POST">
             {% csrf_token %} {{ registration_form.as_p }}
             <!-- Sign up button -->
             <button class="btn btn-outline-warning font-weight-bold black-text my-4 btn-block" type="submit">Register</button>
